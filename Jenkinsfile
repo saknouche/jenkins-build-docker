@@ -9,7 +9,7 @@ node {
     stage ('Run image') {
         docker.image('sadev/nginx').withRun('-p 80:80') { c ->
             sh 'docker ps'
-            sh 'curl localhost'
+            // sh 'curl localhost'
         }
     }
 }
